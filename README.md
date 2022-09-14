@@ -1,28 +1,43 @@
-# Install new mac
+# Install new mac for mobile developper Flutter
 
-0. Check
+1. Initial setup
+   - Internet connexion established
    - FileVault is set up
       - Préférences Système > Sécurité et confidentialité > FileVault
-   - [Latest LRS macOs version](https://en.wikipedia.org/wiki/MacOS_version_history#Releases) installed
+   - [Latest stable macOs version](https://en.wikipedia.org/wiki/MacOS_version_history#Releases) installed
       - Préférences Système > Mise à jour de logiciels
-1. XCode
+   - Password setup
+      - Préférences Système > Utilisateurs et groupes > Modifier le mot de passe...
+2. XCode
    - Dans l'App Store, créer/se connecter à son identifiant Apple
    - Lancer le téléchargement Xcode via App Store (très long)
-2. 
-1. Install Firefox, 
+      - Lancer Xcode pour lancer l'install
+   - ```sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer```
+   - ```sudo xcodebuild -runFirstLaunch```
+3. Settings
+   - Préférences Système > Clavier > Méthodes de saisie > **Français - Numérique**
+   - Préférences Système > TrackPad > Pointer et cliquer > **Toucher pour clicker** activé
+   - Finder > Préférences > **Disques durs** activé
+   - Terminal > Préférences > Profils > Police > Modifier -> 14,  SF Mono Regular 14pt
+   - ***Right clic*** Dock > Préférences du Dock > **Masquer/afficher automatiquement le Dock** coché
+   - If Mac with Apple chipset, create an Intel Terminal
+      - Finder > Applications > Utilitaires > ***Clic droit*** Terminal > Duplicate
+      - Remane Terminal Intel, ***Clic droit*** Terminal Intel > Lire les informations > Ouvrir avec Rosetta
+      - Launch Terminal Intel > ```arch``` => ```i386```
+4. Install Firefox, 
    - Do the sync with your account
    - Set Firefox default browser
-2. Install Chrome
+5. Install Chrome
    - Do the sync with your account
-3. On Terminal, install [brew](https://brew.sh/)
+6. On Terminal, install [brew](https://brew.sh/)
    - ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
-4. On Terminal, install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) 
+7. On Terminal, install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) 
    - ```brew install zsh```
    - ```chsh -s /usr/local/bin/zsh```
-5. On Terminal install [Oh My Zsh](https://ohmyz.sh/)
+8. On Terminal install [Oh My Zsh](https://ohmyz.sh/)
    - ```sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
-6. 
-6. Setup environment
+
+9. Setup environment
 ```
 cd ;
 cd Documents;
@@ -31,22 +46,139 @@ mkdir Android;
 mkdir iOS;
 mkdir Readmes;
 ```
-7. Setup tools
+- ![folder](/images/folders.png)
+10. Setup tools
+```
+brew tap leoafarias/fvm
+brew install fvm
+fvm install stable
+
+export PATH="$PATH:/Users/dleurs/fvm/versions/stable/bin" 
+# Inside zshrc after
+```
+```
+brew install cocoapods
+```
+- Optionnals
 ```
 brew install trash
 ```
-8. Install [vscode](https://code.visualstudio.com/download)
+```
+brew install python
+brew install java
+```
+11. Install [vscode](https://code.visualstudio.com/download)
    - Code > Preferences > Turn on Settings Sync... > GitHub
-9. Install [Android Studio](https://developer.android.com/studio)
-   - 
+   - Launch VSCode > Preferences > Settings
+      - ```dart.devToolsBrowser``` => chrome
+      - ```dart.devToolsLocation``` => external
+      - ```dart.lineLength``` => 80
+12. Install [Android Studio](https://developer.android.com/studio)
+   - Launch Android Studio, install it with default settings
+   - Android Studio > Preferences > Apparence & Behavior > System Settings > Android SDK > **SDK Tools**
+      - **Android SDK Build-Tools** coché
+      - **Android SDK Command-line Tools** coché
+      - **Android SDK Plateform-Tools** coché
+   - Press **Apply** 
+   - Launch Android Studio > More Actions > Virtual Device Manager > Create Device
+      - Pixel 4 > R ***download*** API 30 
+      - Next > Show Advanced Settings > Internal Storage > **8 GB** > Finish
 
-12. Install
+13. Setup ssh
+   - ```git config --global user.name "Firstname LASTNAME"```
+      - ```git config --global user.name```
+   - ```git config --global user.email firstname.lastname@company.com```
+      - ```git config --global user.email```
+   - ```# git config --global init.defaultBranch main```
+      - ```# git config --global init.defaultBranch```
+
+   - ```ssh-keygen -t ed25519 -C "firstname.lastname@company.com"```
+      - OR ```ssh-keygen -t rsa -b 4096 -C "firstname.lastname@company.com"```
+   - ```cat ~/.ssh/id_ed25519.pub | pbcopy```
+      - Paste the content inside Github/Gitlab > Security > Add an SSH Key, with tile **Macbook Pro 14" M1 2021 SERIAL_NUMBER_COMPUTER** 
+   - Add your key to agent without need to enter passphrase every time:
+      - ```ssh-add --apple-use-keychain ~/.ssh/id_ed25519```
+
+14. Setup GPG, to sign commits to avoid impersonation
+   - ```brew install gnupg pinentry-mac```
+   - ```gpg --full-gen-key```
+      - 9 ```ECC (sign and encrypt)```
+      - 1 ```Curve 25519```
+      - 0 ```La clef n'expire pas```
+      - ```Firstname LASTNAME```
+      - ```firstname.lastname@company.com```
+      - ```Macbook Pro 14" M1 2021 SERIAL_NUMBER_COMPUTER```
+   - ```echo "pinentry-program $(brew --prefix)/bin/pinentry-mac" > ~/.gnupg/gpg-agent.conf && chmod 0600 ~/.gnupg/gpg-agent.conf```
+   - ```gpg --list-keys --keyid-format LONG``` > ```[...]pub   ed25519/2B6*********9F4 2021-09-27 [SC][...]```
+   - ```git config --global user.signingkey 2B6*********9F4```
+   - ```git config --global commit.gpgsign true```
+   - ```gpgconf --kill gpg-agent```
+   - ```git log --show-signature```
+   
+15. Setup ```~.zshrc``` like below, copy elements of **ZSHRC** chapter
+16. Check flutter working fine
+   - ```flutter doctor --android-licenses``` 
+      - ```y```
+   - ```flutter doctor -v```
+   - Go to where you save your Flutter projects, ```gof```
+   - ```flutter create first_helloworld```
+   - ```cd first_helloworld```
+   - ```fvm use stable```
+   - ```code first_helloworld```
+   - ```mkdir .vscode; cd .vscode;```
+   - ```touch launch.json```
+```
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "program": "lib/main.dart",
+            "name": "First Helloworld",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
+```
+  - ```touch settings.json```
+```
+{
+    "dart.flutterSdkPath": ".fvm/flutter_sdk",
+    // Remove .fvm files from search
+    "search.exclude": {
+      ".fvm/**": true
+    },
+    // Remove from file watching
+    "files.watcherExclude": {
+      ".fvm/**": true
+    }
+}
+```
+  - Below blue bar > **macOS** > launch iOS simulator > wait for simulator to be launched
+    - Inside vscode > ```fn + F5``` > Check it is running > close running task clicking red square inside VSCode
+  - Below blue bar > **iPhone 14** > Pixel 4 API 30 > wait for simulator to be launched 
+    - Inside vscode > ```fn + F5``` > Check it is running > close running task clicking red square inside VSCode
+  - Below blue bar > **iPhone 14** > Chrome
+    - Inside vscode > ```fn + F5``` > Check it is running > close running task clicking red square inside VSCode
+  
+  - Create a new Github/Gitlab project **Test Upload Helloworld** to see if you can ```git push```, and commit user info is correct
+
+17. Install
    - [VLC](https://www.videolan.org/)
    - [Sublime Text](https://www.sublimetext.com/)
+   - [Postman](https://www.postman.com/downloads/?utm_source=postman-home) or [Insomnia](https://insomnia.rest/download)
+   - [Docker](https://docs.docker.com/desktop/install/mac-install/)
+18. Optionnal install
+   - [Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
+   - [Table Plus](https://tableplus.com/)
+   - [Sourcetree](https://www.sourcetreeapp.com/)
 
+19. Setup icons Dock
+- ![Macbook Doc](/images/dock.png)
 
-
-8. Download [developer tools](https://developer.apple.com/download/more/?=for%20Xcode) for mac, to simulate low connexion 
+20. Download [developer tools](https://developer.apple.com/download/all/?q=Additional%20Tools) **Additional Tools for Xcode**, to simulate low connexion 
+   - Hardware > double clic **Network Link Conditioner**
+      - Préférences Système > Network Link Conditioner
 
 
 
@@ -172,7 +304,7 @@ pull() {
 
 
 changeAuthor() {
-  git config --global user.email dimitri.leurs@numberly.com
+  git config --global user.email firstname.lastname@company.com
   git commit --amend --reset-author --no-edit
 }
 
