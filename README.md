@@ -36,12 +36,14 @@
       - Enregistrement de l'écran > clic Cadenas > + > Application > Firefox
       - Appareil photo > clic Cadenas > + > Application > Firefox
       - Microphone > clic Cadenas > + > Application > Firefox
+      - Service de localisation > clic Cadenas > + > Application > Firefox
 ### 5. Install Chrome
    - Do the sync with your account
    - Préférences Système > Sécurité et confidentialité >
       - Enregistrement de l'écran > clic Cadenas > + > Application > Chrome
       - Appareil photo > clic Cadenas > + > Application > Chrome
       - Microphone > clic Cadenas > + > Application > Chrome
+      - Service de localisation > clic Cadenas > + > Application > Chrome
 ### 6. On Terminal, install [brew](https://brew.sh/)
    - ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
 ### 7. On Terminal, install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) 
