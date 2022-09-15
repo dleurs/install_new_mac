@@ -14,6 +14,7 @@
       - Lancer Xcode pour lancer l'install
    - ```sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer```
    - ```sudo xcodebuild -runFirstLaunch```
+   - Consider install previous Xcode version, but rename it to not replace up-to-date Xcode
 ### 3. Settings
    - Préférences Système > Clavier > Méthodes de saisie > **Français - Numérique**
    - Préférences Système > TrackPad > Pointer et cliquer > **Toucher pour clicker** activé
