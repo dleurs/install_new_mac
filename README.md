@@ -24,11 +24,22 @@
       - Finder > Applications > Utilitaires > ***Clic droit*** Terminal > Duplicate
       - Remane Terminal Intel, ***Clic droit*** Terminal Intel > Lire les informations > Ouvrir avec Rosetta
       - Launch Terminal Intel > ```arch``` => ```i386```
+   - Préférences Système > Clavier > Méthodes de saisie > **Français - Numérique**
+   - Préférences Système > Son > Sortie > Afficher Son dans la barre des menus coché et **toujours**
+   - Préférences Système > Bluetooth > Afficher Bluetooth dans la barre des menus coché
 ### 4. Install Firefox, 
    - Do the sync with your account
    - Set Firefox default browser
+   - Préférences Système > Sécurité et confidentialité > 
+      - Enregistrement de l'écran > clic Cadenas > + > Application > Firefox
+      - Appareil photo > clic Cadenas > + > Application > Firefox
+      - Microphone > clic Cadenas > + > Application > Firefox
 ### 5. Install Chrome
    - Do the sync with your account
+   - Préférences Système > Sécurité et confidentialité >
+      - Enregistrement de l'écran > clic Cadenas > + > Application > Chrome
+      - Appareil photo > clic Cadenas > + > Application > Chrome
+      - Microphone > clic Cadenas > + > Application > Chrome
 ### 6. On Terminal, install [brew](https://brew.sh/)
    - ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
 ### 7. On Terminal, install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) 
