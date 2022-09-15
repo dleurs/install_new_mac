@@ -15,6 +15,7 @@
    - ```sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer```
    - ```sudo xcodebuild -runFirstLaunch```
    - Consider install previous Xcode version, but rename it to not replace up-to-date Xcode
+      - To select the default Xcode for flutter : ```sudo xcode-select -s <path/to/>Xcode.app``` 
 ### 3. Settings
    - Préférences Système > Clavier > Méthodes de saisie > **Français - Numérique**
    - Préférences Système > TrackPad > Pointer et cliquer > **Toucher pour clicker** activé
