@@ -1,6 +1,6 @@
 # Install new mac for mobile developper Flutter
 
-1. Initial setup
+### 1. Initial setup
    - Internet connexion established
    - FileVault is set up
       - Préférences Système > Sécurité et confidentialité > FileVault
@@ -8,13 +8,13 @@
       - Préférences Système > Mise à jour de logiciels
    - Password setup
       - Préférences Système > Utilisateurs et groupes > Modifier le mot de passe...
-2. XCode
+### 2. XCode
    - Dans l'App Store, créer/se connecter à son identifiant Apple
    - Lancer le téléchargement Xcode via App Store (très long)
       - Lancer Xcode pour lancer l'install
    - ```sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer```
    - ```sudo xcodebuild -runFirstLaunch```
-3. Settings
+### 3. Settings
    - Préférences Système > Clavier > Méthodes de saisie > **Français - Numérique**
    - Préférences Système > TrackPad > Pointer et cliquer > **Toucher pour clicker** activé
    - Finder > Préférences > **Disques durs** activé
@@ -27,28 +27,28 @@
    - Préférences Système > Clavier > Méthodes de saisie > **Français - Numérique**
    - Préférences Système > Son > Sortie > Afficher Son dans la barre des menus coché et **toujours**
    - Préférences Système > Bluetooth > Afficher Bluetooth dans la barre des menus coché
-4. Install Firefox, 
+### 4. Install Firefox, 
    - Do the sync with your account
    - Set Firefox default browser
    - Préférences Système > Sécurité et confidentialité > 
       - Enregistrement de l'écran > clic Cadenas > + > Application > Firefox
       - Appareil photo > clic Cadenas > + > Application > Firefox
       - Microphone > clic Cadenas > + > Application > Firefox
-5. Install Chrome
+### 5. Install Chrome
    - Do the sync with your account
    - Préférences Système > Sécurité et confidentialité >
       - Enregistrement de l'écran > clic Cadenas > + > Application > Chrome
       - Appareil photo > clic Cadenas > + > Application > Chrome
       - Microphone > clic Cadenas > + > Application > Chrome
-6. On Terminal, install [brew](https://brew.sh/)
+### 6. On Terminal, install [brew](https://brew.sh/)
    - ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
-7. On Terminal, install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) 
+### 7. On Terminal, install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) 
    - ```brew install zsh```
    - ```chsh -s /usr/local/bin/zsh```
-8. On Terminal install [Oh My Zsh](https://ohmyz.sh/)
+### 8. On Terminal install [Oh My Zsh](https://ohmyz.sh/)
    - ```sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
 
-9. Setup environment
+### 9. Setup environment
 ```
 cd ;
 cd Documents;
@@ -58,7 +58,7 @@ mkdir iOS;
 mkdir Readmes;
 ```
 - ![folder](/images/folders.png)
-10. Setup tools
+### 10. Setup tools
 ```
 brew tap leoafarias/fvm
 brew install fvm
@@ -78,13 +78,13 @@ brew install trash
 brew install python
 brew install java
 ```
-11. Install [vscode](https://code.visualstudio.com/download)
+### 11. Install [vscode](https://code.visualstudio.com/download)
    - Code > Preferences > Turn on Settings Sync... > GitHub
    - Launch VSCode > Preferences > Settings
       - ```dart.devToolsBrowser``` => chrome
       - ```dart.devToolsLocation``` => external
       - ```dart.lineLength``` => 80
-12. Install [Android Studio](https://developer.android.com/studio)
+### 12. Install [Android Studio](https://developer.android.com/studio)
    - Launch Android Studio, install it with default settings
    - Android Studio > Preferences > Apparence & Behavior > System Settings > Android SDK > **SDK Tools**
       - **Android SDK Build-Tools** coché
@@ -95,7 +95,7 @@ brew install java
       - Pixel 4 > R ***download*** API 30 
       - Next > Show Advanced Settings > Internal Storage > **8 GB** > Finish
 
-13. Setup ssh
+### 13. Setup ssh
    - ```git config --global user.name "Firstname LASTNAME"```
       - ```git config --global user.name```
    - ```git config --global user.email firstname.lastname@company.com```
@@ -110,7 +110,7 @@ brew install java
    - Add your key to agent without need to enter passphrase every time:
       - ```ssh-add --apple-use-keychain ~/.ssh/id_ed25519```
 
-14. Setup GPG, to sign commits to avoid impersonation
+### 14. Setup GPG, to sign commits to avoid impersonation
    - ```brew install gnupg pinentry-mac```
    - ```gpg --full-gen-key```
       - 9 ```ECC (sign and encrypt)```
@@ -126,8 +126,8 @@ brew install java
    - ```gpgconf --kill gpg-agent```
    - ```git log --show-signature```
    
-15. Setup ```~.zshrc``` like below, copy elements of **ZSHRC** chapter
-16. Check flutter working fine
+### 15. Setup ```~.zshrc``` like below, copy elements of **ZSHRC** chapter
+### 16. Check flutter working fine
    - ```flutter doctor --android-licenses``` 
       - ```y```
    - ```flutter doctor -v```
@@ -174,20 +174,20 @@ brew install java
   
   - Create a new Github/Gitlab project **Test Upload Helloworld** to see if you can ```git push```, and commit user info is correct
 
-17. Install
+### 17. Install
    - [VLC](https://www.videolan.org/)
    - [Sublime Text](https://www.sublimetext.com/)
    - [Postman](https://www.postman.com/downloads/?utm_source=postman-home) or [Insomnia](https://insomnia.rest/download)
    - [Docker](https://docs.docker.com/desktop/install/mac-install/)
-18. Optionnal install
+### 18. Optionnal install
    - [Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
    - [Table Plus](https://tableplus.com/)
    - [Sourcetree](https://www.sourcetreeapp.com/)
 
-19. Setup icons Dock
+### 19. Setup icons Dock
 - ![Macbook Doc](/images/dock.png)
 
-20. Download [developer tools](https://developer.apple.com/download/all/?q=Additional%20Tools) **Additional Tools for Xcode**, to simulate low connexion 
+### 20. Download [developer tools](https://developer.apple.com/download/all/?q=Additional%20Tools) **Additional Tools for Xcode**, to simulate low connexion 
    - Hardware > double clic **Network Link Conditioner**
       - Préférences Système > Network Link Conditioner
 
