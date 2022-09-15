@@ -8,7 +8,7 @@
       - Préférences Système > Mise à jour de logiciels
    - Password setup
       - Préférences Système > Utilisateurs et groupes > Modifier le mot de passe...
-### 2. XCode
+### 2. [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
    - Dans l'App Store, créer/se connecter à son identifiant Apple
    - Lancer [le téléchargement Xcode](https://developer.apple.com/xcode/resources/) via App Store (très long)
       - Lancer Xcode pour lancer l'install
@@ -29,7 +29,7 @@
    - Préférences Système > Clavier > Méthodes de saisie > **Français - Numérique**
    - Préférences Système > Son > Sortie > Afficher Son dans la barre des menus coché et **toujours**
    - Préférences Système > Bluetooth > Afficher Bluetooth dans la barre des menus coché
-### 4. Install Firefox, 
+### 4. Install [Firefox](https://www.mozilla.org/en-US/firefox/new/)
    - Do the sync with your account
    - Set Firefox default browser
    - Préférences Système > Sécurité et confidentialité > 
@@ -37,7 +37,7 @@
       - Appareil photo > clic Cadenas > + > Application > Firefox
       - Microphone > clic Cadenas > + > Application > Firefox
       - Service de localisation > clic Cadenas > + > Application > Firefox
-### 5. Install Chrome
+### 5. Install [Chrome](https://www.google.com/chrome/)
    - Do the sync with your account
    - Préférences Système > Sécurité et confidentialité >
       - Enregistrement de l'écran > clic Cadenas > + > Application > Chrome
@@ -82,7 +82,7 @@ brew install trash
 brew install python
 brew install java
 ```
-### 11. Install [vscode](https://code.visualstudio.com/download)
+### 11. Install [VSCode](https://code.visualstudio.com/download)
    - Code > Preferences > Turn on Settings Sync... > GitHub
    - Launch VSCode > Preferences > Settings
       - ```dart.devToolsBrowser``` => chrome
@@ -99,7 +99,7 @@ brew install java
       - Pixel 4 > R ***download*** API 30 
       - Next > Show Advanced Settings > Internal Storage > **8 GB** > Finish
 
-### 13. Setup ssh
+### 13. Setup SSH
    - ```git config --global user.name "Firstname LASTNAME"```
       - ```git config --global user.name```
    - ```git config --global user.email firstname.lastname@company.com```
@@ -131,6 +131,7 @@ brew install java
    - ```git log --show-signature```
    
 ### 15. Setup ```~.zshrc``` like below, copy elements of **ZSHRC** chapter
+
 ### 16. Check flutter working fine
    - ```flutter doctor --android-licenses``` 
       - ```y```
@@ -191,7 +192,7 @@ brew install java
 ### 19. Setup icons Dock
 - ![Macbook Doc](/images/dock.png)
 
-### 20. Download [developer tools](https://developer.apple.com/download/all/?q=Additional%20Tools) **Additional Tools for Xcode**, to simulate low connexion 
+### 20. Download [Developer Tools](https://developer.apple.com/download/all/?q=Additional%20Tools) **Additional Tools for Xcode**, to simulate low connexion 
    - Hardware > double clic **Network Link Conditioner**
       - Préférences Système > Network Link Conditioner
 
