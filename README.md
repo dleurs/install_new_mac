@@ -10,11 +10,11 @@
       - Préférences Système > Utilisateurs et groupes > Modifier le mot de passe...
 ### 2. XCode
    - Dans l'App Store, créer/se connecter à son identifiant Apple
-   - Lancer le téléchargement Xcode via App Store (très long)
+   - Lancer [le téléchargement Xcode](https://developer.apple.com/xcode/resources/) via App Store (très long)
       - Lancer Xcode pour lancer l'install
    - ```sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer```
    - ```sudo xcodebuild -runFirstLaunch```
-   - Consider install previous Xcode version, but rename it to not replace up-to-date Xcode
+   - [Consider install previous Xcode version](https://xcodereleases.com/), but rename it to not replace up-to-date Xcode
       - To select the default Xcode for flutter : ```sudo xcode-select -s <path/to/>Xcode.app``` 
 ### 3. Settings
    - Préférences Système > Clavier > Méthodes de saisie > **Français - Numérique**
