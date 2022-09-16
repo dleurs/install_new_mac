@@ -231,6 +231,18 @@ alias d="docker"
 alias rm="echo 'FAILURE : better user trash, or /bin/rm'"
 
 ############# END ALIASES ############# 
+
+```
+
+### ZSHRC keys
+
+```
+
+################ KEYS #################
+
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+
+############## END KEYS ###############
 ```
 
 ### ZSHRC functions
