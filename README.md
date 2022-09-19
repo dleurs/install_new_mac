@@ -29,6 +29,7 @@
    - Préférences Système > Clavier > Méthodes de saisie > **Français - Numérique**
    - Préférences Système > Son > Sortie > Afficher Son dans la barre des menus coché et **toujours**
    - Préférences Système > Bluetooth > Afficher Bluetooth dans la barre des menus coché
+   - Préférences Système > Réseau > Wifi + Câble > Avancé > DNS > Add 1.1.1.1 & 1.0.0.1
 ### 4. Install [Firefox](https://www.mozilla.org/en-US/firefox/new/)
    - Do the sync with your account
    - Set Firefox default browser
@@ -61,8 +62,9 @@ mkdir Android;
 mkdir iOS;
 mkdir Readmes;
 ```
-- ![folder](/images/folders.png)
+- <img width="176" alt="Capture d’écran 2022-09-20 à 00 09 15" src="https://user-images.githubusercontent.com/58068925/191128920-4821519a-8712-4dab-9e0a-f407c5725a8d.png">
 ### 10. Setup tools
+
 ```
 brew tap leoafarias/fvm
 brew install fvm
