@@ -95,11 +95,11 @@ brew install java
    - Code > Preferences > Turn on Settings Sync... > GitHub
    - Launch VSCode > Preferences > Settings
 ```
-dart.devToolsBrowser
-``` => chrome
+dart.devToolsBrowser > chrome
 ```
-dart.devToolsLocation
-``` => external
+```
+dart.devToolsLocation > external
+```
 ```
 dart.lineLength
 ``` => 80
