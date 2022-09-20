@@ -101,8 +101,8 @@ dart.devToolsBrowser > chrome
 dart.devToolsLocation > external
 ```
 ```
-dart.lineLength
-``` => 80
+dart.lineLength > 80
+```
 ### 12. Install [Android Studio](https://developer.android.com/studio)
    - Launch Android Studio, install it with default settings
    - Android Studio > Preferences > Apparence & Behavior > System Settings > Android SDK > **SDK Tools**
