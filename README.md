@@ -46,13 +46,20 @@
       - Microphone > clic Cadenas > + > Application > Chrome
       - Service de localisation > clic Cadenas > + > Application > Chrome
 ### 6. On Terminal, install [brew](https://brew.sh/)
-   - ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 ### 7. On Terminal, install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) 
-   - ```brew install zsh```
-   - ```chsh -s /usr/local/bin/zsh```
+```
+brew install zsh
+```
+```
+chsh -s /usr/local/bin/zsh
+```
 ### 8. On Terminal install [Oh My Zsh](https://ohmyz.sh/)
-   - ```sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
-
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 ### 9. Setup environment
 ```
 cd ;
@@ -87,9 +94,15 @@ brew install java
 ### 11. Install [VSCode](https://code.visualstudio.com/download)
    - Code > Preferences > Turn on Settings Sync... > GitHub
    - Launch VSCode > Preferences > Settings
-      - ```dart.devToolsBrowser``` => chrome
-      - ```dart.devToolsLocation``` => external
-      - ```dart.lineLength``` => 80
+```
+dart.devToolsBrowser
+``` => chrome
+```
+dart.devToolsLocation
+``` => external
+```
+dart.lineLength
+``` => 80
 ### 12. Install [Android Studio](https://developer.android.com/studio)
    - Launch Android Studio, install it with default settings
    - Android Studio > Preferences > Apparence & Behavior > System Settings > Android SDK > **SDK Tools**
@@ -102,49 +115,93 @@ brew install java
       - Next > Show Advanced Settings > Internal Storage > **8 GB** > Finish
 
 ### 13. Setup SSH
-   - ```git config --global user.name "Firstname LASTNAME"```
-      - ```git config --global user.name```
-   - ```git config --global user.email firstname.lastname@company.com```
-      - ```git config --global user.email```
-   - ```# git config --global init.defaultBranch main```
-      - ```# git config --global init.defaultBranch```
-
-   - ```ssh-keygen -t ed25519 -C "firstname.lastname@company.com"```
-      - OR ```ssh-keygen -t rsa -b 4096 -C "firstname.lastname@company.com"```
-   - ```cat ~/.ssh/id_ed25519.pub | pbcopy```
-      - Paste the content inside Github/Gitlab > Security > Add an SSH Key, with tile **Macbook Pro 14" M1 2021 SERIAL_NUMBER_COMPUTER** 
-   - Add your key to agent without need to enter passphrase every time:
-      - ```ssh-add --apple-use-keychain ~/.ssh/id_ed25519```
+```
+git config --global user.name "Firstname LASTNAME"
+git config --global user.name
+```
+```
+git config --global user.email firstname.lastname@company.com
+git config --global user.email
+```
+```
+git config --global init.defaultBranch main
+git config --global init.defaultBranch
+```
+```
+ssh-keygen -t ed25519 -C "firstname.lastname@company.com"
+```
+- OR ```ssh-keygen -t rsa -b 4096 -C "firstname.lastname@company.com"```
+```
+cat ~/.ssh/id_ed25519.pub | pbcopy
+```
+- Paste the content inside Github/Gitlab > Security > Add an SSH Key, with tile **Macbook Pro 14" M1 2021 SERIAL_NUMBER_COMPUTER** 
+ - Add your key to agent without need to enter passphrase every time:
+```
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+# Then inside ~/.zshrc
+```
 
 ### 14. Setup GPG, to sign commits to avoid impersonation
-   - ```brew install gnupg pinentry-mac```
-   - ```gpg --full-gen-key```
+```
+brew install gnupg pinentry-mac
+```
+```
+gpg --full-gen-key
+```
       - 9 ```ECC (sign and encrypt)```
       - 1 ```Curve 25519```
       - 0 ```La clef n'expire pas```
       - ```Firstname LASTNAME```
       - ```firstname.lastname@company.com```
       - ```Macbook Pro 14" M1 2021 SERIAL_NUMBER_COMPUTER```
-   - ```echo "pinentry-program $(brew --prefix)/bin/pinentry-mac" > ~/.gnupg/gpg-agent.conf && chmod 0600 ~/.gnupg/gpg-agent.conf```
-   - ```gpg --list-keys --keyid-format LONG``` > ```[...]pub   ed25519/2B6*********9F4 2021-09-27 [SC][...]```
-   - ```git config --global user.signingkey 2B6*********9F4```
-   - ```git config --global commit.gpgsign true```
-   - ```gpgconf --kill gpg-agent```
-   - ```git log --show-signature```
+```
+echo "pinentry-program $(brew --prefix)/bin/pinentry-mac" > ~/.gnupg/gpg-agent.conf && chmod 0600 ~/.gnupg/gpg-agent.conf
+```
+```
+$ gpg --list-keys --keyid-format LONG
+$ [...]pub   ed25519/2B6*********9F4 2021-09-27 [SC][...]
+```
+```
+git config --global user.signingkey 2B6*********9F4
+```
+```
+git config --global commit.gpgsign true
+```
+```
+gpgconf --kill gpg-agent
+```
+```
+git log --show-signature
+```
    
 ### 15. Setup ```~.zshrc``` like below, copy elements of **ZSHRC** chapter
 
-### 16. Check flutter working fine
-   - ```flutter doctor --android-licenses``` 
-      - ```y```
-   - ```flutter doctor -v```
-   - Go to where you save your Flutter projects, ```gof```
-   - ```flutter create first_helloworld```
-   - ```cd first_helloworld```
-   - ```fvm use stable```
-   - ```code first_helloworld```
-   - ```mkdir .vscode; cd .vscode;```
-   - ```touch launch.json```
+### 16. Setup Flutter and check it is working fine
+```
+flutter doctor --android-licenses
+``` 
+```
+flutter doctor -v
+```
+- Go to where you save your Flutter projects, ```gof```
+```
+flutter create first_helloworld
+```
+```
+cd first_helloworld
+```
+```
+fvm use stable
+```
+```
+code first_helloworld
+```
+```
+mkdir .vscode; cd .vscode;
+```
+```
+touch launch.json
+```
 ```
 {
     "version": "0.2.0",
@@ -158,7 +215,9 @@ brew install java
     ]
 }
 ```
-  - ```touch settings.json```
+```
+touch settings.json
+```
 ```
 {
     "dart.flutterSdkPath": ".fvm/flutter_sdk",
