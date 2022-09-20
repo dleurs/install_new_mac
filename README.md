@@ -259,9 +259,7 @@ touch settings.json
       - Préférences Système > Network Link Conditioner
       
 ### 21. Set profile picture
-- Download profile picture in dleurs > Images
-
-![Dimitri_Leurs_rounded](https://user-images.githubusercontent.com/58068925/191209258-d03a160a-3155-4f49-b301-bc2792fc5b14.jpeg)
+- Download profile picture in this repo inside dleurs > Images
 
 
 
