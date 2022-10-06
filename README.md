@@ -16,7 +16,7 @@
    - ```sudo xcodebuild -runFirstLaunch```
    - [Consider install previous Xcode version](https://xcodereleases.com/), but rename it to not replace up-to-date Xcode
       - To select the default Xcode for flutter : ```sudo xcode-select -s <path/to/>Xcode.app``` 
-### 3. Settings
+### 3.1 Settings
    - Préférences Système > Clavier > Méthodes de saisie > **Français - Numérique**
    - Préférences Système > TrackPad > Pointer et cliquer > **Toucher pour clicker** activé
    - Finder > Préférences > **Disques durs** activé
@@ -29,6 +29,9 @@
    - Préférences Système > Clavier > Méthodes de saisie > **Français - Numérique**
    - Préférences Système > Son > Sortie > Afficher Son dans la barre des menus coché et **toujours**
    - Préférences Système > Bluetooth > Afficher Bluetooth dans la barre des menus coché
+
+### 3.2 Minor settings
+   - QuickTime > Enregistrement de l'écran > Options > Afficher les clics de la souris
    - Préférences Système > Réseau > Wifi + Câble > Avancé > DNS > Add 1.1.1.1 & 1.0.0.1
 ### 4. Install [Firefox](https://www.mozilla.org/en-US/firefox/new/)
    - Do the sync with your account
