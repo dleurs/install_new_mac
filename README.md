@@ -177,7 +177,7 @@ gpgconf --kill gpg-agent
 git log --show-signature
 ```
    
-### 15. Setup ```~.zshrc``` like below, copy elements of **ZSHRC** chapter
+### 15. Setup ```~.zshrc``` like [below](https://github.com/dleurs/install_new_mac/blob/main/README.md#zshrc), copy elements of **ZSHRC** chapter
 
 ### 16. Setup Flutter and check it is working fine
 ```
