@@ -30,6 +30,7 @@
    - Préférences Système > Son > Sortie > Afficher Son dans la barre des menus coché et **toujours**
    - Préférences Système > Bluetooth > Afficher Bluetooth dans la barre des menus coché
    - Cmd + Space > Simulateur > Lancer simulateur > Réglages > Clavier > Claviers > Français (France) en premier
+   - Cmd + Space > Simulateur > Lancer simulateur > Réglages > Langue et région > Langue Français
 
 ### 3.2 Minor settings
    - QuickTime > Enregistrement de l'écran > Options > Afficher les clics de la souris
@@ -117,6 +118,7 @@ dart.lineLength > 80
    - Launch Android Studio > More Actions > Virtual Device Manager > Create Device
       - Pixel 4 > R ***download*** API 30 
       - Next > Show Advanced Settings > Internal Storage > **8 GB** > Finish
+      - Mettre langue et clavier du simulateur à français
 
 ### 13. Setup SSH
 ```
