@@ -29,6 +29,7 @@
    - Préférences Système > Clavier > Méthodes de saisie > **Français - Numérique**
    - Préférences Système > Son > Sortie > Afficher Son dans la barre des menus coché et **toujours**
    - Préférences Système > Bluetooth > Afficher Bluetooth dans la barre des menus coché
+   - Cmd + Space > Simulateur > Lancer simulateur > Réglages > Clavier > Claviers > Français (France) en premier
 
 ### 3.2 Minor settings
    - QuickTime > Enregistrement de l'écran > Options > Afficher les clics de la souris
