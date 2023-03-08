@@ -267,6 +267,24 @@ touch settings.json
 ### 21. Set profile picture
 - Download profile picture in this repo inside dleurs > Images
 
+### 22. Install mitmproxy
+- ```brew install mitmproxy```
+- S'assurer de n'avoir qu'une connexion wifi
+- Réglages Systèmes > Wifi > Détails > Proxys > 
+   - Proxy web : Serveur localhost / Port 8080
+   - Proxy web sécurisé : Serveur localhost / Port 8080
+- ```cd; cd Documents; mkdir Proxy```
+- Via Chrome : mitm.it
+- Téléchargez proxy macOS et iOS, déplacer vers ~/Documents/Proxy, renommez préfixe macOs et iOS
+- Double clic certificat macOs, puis KeyChain > "mitm" > Toujours faire confiance
+- On Firefox > Réglages > Vie privée et sécurité > Afficher les certificats > Autorité > Importer > certificat iOS
+- On Chrome > proxy > utiliser proxy système
+- Ouvrir simulateur iOS > drag drop certificat iOS dans simulateur > Réglages > Général > Informations > Réglages des certificats > mitmproxy checked
+
+- ```mitmweb```
+- Press z to clean history
+
+
 
 
 
