@@ -269,8 +269,8 @@ touch settings.json
 
 ### 22. Install mitmproxy
 - ```brew install mitmproxy```
-- S'assurer de n'avoir qu'une connexion wifi
-- Réglages Systèmes > Wifi > Détails > Proxys > 
+- S'assurer de n'avoir qu'une connexion wifi ou filaire (pas deux à la fois)
+- Réglages Systèmes > Wifi ou filaire > Détails > Proxys > 
    - Proxy web : Serveur localhost / Port 8080
    - Proxy web sécurisé : Serveur localhost / Port 8080
 - ```cd; cd Documents; mkdir Proxy```
