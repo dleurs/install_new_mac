@@ -256,6 +256,7 @@ touch settings.json
    - [Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
    - [Table Plus](https://tableplus.com/)
    - [Sourcetree](https://www.sourcetreeapp.com/)
+   - [Vysor](https://www.vysor.io/)
 
 ### 19. Setup icons Dock
 - ![Macbook Doc](/images/dock.png)
