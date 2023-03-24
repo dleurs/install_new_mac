@@ -290,7 +290,9 @@ touch settings.json
 - Intall [.dmg file](https://github.com/vincelwt/chatgpt-mac) ChatGPT
 - Install [llama.cpp](https://github.com/ggerganov/llama.cpp)
    - [The install doc](https://til.simonwillison.net/llms/llama-7b-m2)
-- Get the weights from [here](https://github.com/facebookresearch/llama/pull/73/commits/56de950af8a48c7cae221581e2e3e2c342b2ad82) 219Go required or select only 7B model with BitTorrent
+- Get the weights from [here](https://github.com/facebookresearch/llama/pull/73/commits/56de950af8a48c7cae221581e2e3e2c342b2ad82) 219Go required or select only 7B model with qBitTorrent
+![image](https://user-images.githubusercontent.com/58068925/227500173-2621ef99-03e7-41e7-8e98-67167ab76beb.png)
+
 
 
 
