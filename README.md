@@ -285,6 +285,12 @@ touch settings.json
 - ```mitmweb```
 - Press z to clean history
 
+### 23. AI
+- Intall [.dmg file](https://github.com/vincelwt/chatgpt-mac) ChatGPT
+- Install [llama.cpp](https://github.com/ggerganov/llama.cpp)
+   - 
+- Get the weights from [here](https://github.com/facebookresearch/llama/pull/73/commits/56de950af8a48c7cae221581e2e3e2c342b2ad82) 219Go required 
+
 
 
 
