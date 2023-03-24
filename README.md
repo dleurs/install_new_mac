@@ -451,7 +451,9 @@ setnamespace() {
 llama() {
   if [ $# -eq 0 ];
   then
-    echo "No arguments supplied. Example : llama \"Who is the first man that walk on the moon ?\" ";
+    ~/Documents/AI/llama.cpp/main -m ~/Documents/AI/models/LLaMa/7B/ggml-model-q4_0.bin \
+    --interactive-first \
+    -n 512
   else
     ~/Documents/AI/llama.cpp/main -m ~/Documents/AI/models/LLaMa/7B/ggml-model-q4_0.bin \
     -n 512 \
