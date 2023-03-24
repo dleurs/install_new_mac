@@ -73,6 +73,7 @@ mkdir Flutter;
 mkdir Android;
 mkdir iOS;
 mkdir Readmes;
+mkdir AI;
 ```
 - <img width="176" alt="Capture d’écran 2022-09-20 à 00 09 15" src="https://user-images.githubusercontent.com/58068925/191128920-4821519a-8712-4dab-9e0a-f407c5725a8d.png">
 ### 10. Setup tools
@@ -319,6 +320,7 @@ alias gof="cd ~/Documents/Flutter"
 alias goa="cd ~/Documents/Android"
 alias goi="cd ~/Documents/iOS"
 alias gor="cd ~/Documents/Readmes"
+alias goai="cd ~/Documents/AI"
 
 alias sublzsh="subl ~/.zshrc"
 alias k="kubectl"
