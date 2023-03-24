@@ -324,6 +324,9 @@ alias goi="cd ~/Documents/iOS"
 alias gor="cd ~/Documents/Readmes"
 alias goai="cd ~/Documents/AI"
 
+alias pip="pip3"
+alias pyton="python3"
+
 alias sublzsh="subl ~/.zshrc"
 alias k="kubectl"
 alias d="docker"
@@ -450,8 +453,8 @@ llama() {
   then
     echo "No arguments supplied. Example : llama \"Who is the first man that walk on the moon ?\" ";
   else
-    ~/Documents/AI/llama.cpp/main -m ~/Documents/AI//models/LLaMa/7B/ggml-model-q4_0.bin \
-    -n 128 \
+    ~/Documents/AI/llama.cpp/main -m ~/Documents/AI/models/LLaMa/7B/ggml-model-q4_0.bin \
+    -n 512 \
     -p $1
   fi
 }
