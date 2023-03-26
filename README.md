@@ -448,17 +448,13 @@ setnamespace() {
   kubectl config set-context --current --namespace=$1
 }
 
-llama() {
-  if [ $# -eq 0 ];
-  then
-    ~/Documents/AI/llama.cpp/main -m ~/Documents/AI/models/LLaMa/7B/ggml-model-q4_0.bin \
-    --interactive-first \
-    -n 512
-  else
-    ~/Documents/AI/llama.cpp/main -m ~/Documents/AI/models/LLaMa/7B/ggml-model-q4_0.bin \
-    -n 512 \
-    -p $1
-  fi
+llama () {
+	if [ $# -eq 0 ]
+	then
+		~/Documents/AI/llama.cpp/main -m ~/Documents/AI/models/LLaMa/13B/ggml-model-q4_0.bin --interactive-first -n 512
+	else
+		~/Documents/AI/llama.cpp/main -m ~/Documents/AI/models/LLaMa/13B/ggml-model-q4_0.bin -n 512 -p $1
+	fi
 }
 
 
