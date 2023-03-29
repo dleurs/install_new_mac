@@ -253,6 +253,7 @@ touch settings.json
    - [Sublime Text](https://www.sublimetext.com/)
    - [Postman](https://www.postman.com/downloads/?utm_source=postman-home) or [Insomnia](https://insomnia.rest/download)
    - [Docker](https://docs.docker.com/desktop/install/mac-install/)
+   - [act] ```brew install act``` (require docker)
 ### 18. Optionnal install
    - [Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
    - [Table Plus](https://tableplus.com/)
@@ -286,7 +287,10 @@ touch settings.json
 - ```mitmweb```
 - Press z to clean history
 
-### 23. AI
+### 23. AI 
+
+(Tests were bad so you can avoid it)
+
 - Intall [.dmg file](https://github.com/vincelwt/chatgpt-mac) ChatGPT
 - Install [llama.cpp](https://github.com/ggerganov/llama.cpp)
    - [The install doc](https://til.simonwillison.net/llms/llama-7b-m2)
