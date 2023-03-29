@@ -253,6 +253,7 @@ touch settings.json
    - [Sublime Text](https://www.sublimetext.com/)
    - [Postman](https://www.postman.com/downloads/?utm_source=postman-home) or [Insomnia](https://insomnia.rest/download)
    - [Docker](https://docs.docker.com/desktop/install/mac-install/)
+      - Launch and connect 	
    - [act] ```brew install act``` (require docker)
 ### 18. Optionnal install
    - [Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
