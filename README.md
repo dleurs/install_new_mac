@@ -35,6 +35,8 @@
 ### 3.2 Minor settings
    - QuickTime > Enregistrement de l'écran > Options > Afficher les clics de la souris
    - Préférences Système > Réseau > Wifi + Câble > Avancé > DNS > Add 1.1.1.1 & 1.0.0.1
+   - Préférences Sytème > Confidentialité et sécurité > Accès complet au disque > Terminal
+      - Pour accéder à ls depuis ~/.Trash
 ### 4. Install [Firefox](https://www.mozilla.org/en-US/firefox/new/)
    - Do the sync with your account
    - Set Firefox default browser
@@ -93,6 +95,7 @@ brew install cocoapods
 ```
 brew install trash
 ```
+Les dossiers ne seront pas visibles dans la poubelle mac, il faudra ```cd ~/.Trash; ls; mv```
 ```
 brew install python
 brew install java
