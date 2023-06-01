@@ -184,9 +184,11 @@ gpgconf --kill gpg-agent
 git log --show-signature
 ```
 ```
-gpg --armor --export 2B6*********9F4
+gpg --armor --export 2B6*********9F4 | pbcopy
 ```
 Paste to github/gitlab
+- https://github.com/settings/keys
+- https://gitlab.com/-/profile/gpg_keys
    
 ### 15. Setup ```~.zshrc``` like [below](https://github.com/dleurs/install_new_mac/blob/main/README.md#zshrc), copy elements of **ZSHRC** chapter
 
@@ -368,38 +370,40 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 ```
 ############## FUNCTIONS ##############
 
-push() {
-if [ $# -eq 0 ];
-then
-  echo "No arguments supplied. Example : push \"initial commit\" ";
-else
-  commitMessage=$1
-  if [ "$commitMessage" = "" ]; 
-  then
-    echo "No commit message";
-  else
-    echo "\ngit status;\n";
-    git status;
-    echo "\ngit --no-pager diff;\n";
-    git --no-pager diff;
-    echo "\ngit add -A;\n";
-    git add -A;
-    echo "\ngit commit -m \"${commitMessage}\";\n";
-    git commit -m $commitMessage;
-    if [ $# -eq 1 ]; 
-    then
-      branch=$(git branch --show-current);
-    else
-      branch=$2
-    fi
-    for remote in $(git remote)
-    do
-      echo "\ngit push $remote $branch;\n";
-      git push $remote $branch;
-    done
-  fi
-fi
-}
+# Risky not to check commits and remote to push
+#
+# push() {
+# if [ $# -eq 0 ];
+# then
+#   echo "No arguments supplied. Example : push \"initial commit\" ";
+# else
+#   commitMessage=$1
+#   if [ "$commitMessage" = "" ]; 
+#   then
+#     echo "No commit message";
+#   else
+#     echo "\ngit status;\n";
+#     git status;
+#     echo "\ngit --no-pager diff;\n";
+#     git --no-pager diff;
+#     echo "\ngit add -A;\n";
+#     git add -A;
+#     echo "\ngit commit -m \"${commitMessage}\";\n";
+#     git commit -m $commitMessage;
+#     if [ $# -eq 1 ]; 
+#     then
+#       branch=$(git branch --show-current);
+#     else
+#       branch=$2
+#     fi
+#     for remote in $(git remote)
+#     do
+#       echo "\ngit push $remote $branch;\n";
+#       git push $remote $branch;
+#     done
+#   fi
+# fi
+# }
 
 apush() { # Amend push
 if [ $# -eq 0 ];
