@@ -183,6 +183,10 @@ gpgconf --kill gpg-agent
 ```
 git log --show-signature
 ```
+```
+gpg --armor --export 2B6*********9F4
+```
+Paste to github/gitlab
    
 ### 15. Setup ```~.zshrc``` like [below](https://github.com/dleurs/install_new_mac/blob/main/README.md#zshrc), copy elements of **ZSHRC** chapter
 
