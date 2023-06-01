@@ -111,6 +111,7 @@ dart.devToolsLocation > external
 ```
 ```
 dart.lineLength > 80
+# Dans la plupart des projets flutter on mettra 120
 ```
 ### 12. Install [Android Studio](https://developer.android.com/studio)
    - Launch Android Studio, install it with default settings
