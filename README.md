@@ -5,9 +5,9 @@
    - FileVault is set up
       - Réglages Système > Confidentialité et sécurité > FileVault
    - [Latest stable macOs version](https://en.wikipedia.org/wiki/MacOS_version_history#Releases) installed
-      - Préférences Système > Mise à jour de logiciels
+      - Réglages Système > Mise à jour de logiciels
    - Password setup
-      - Préférences Système > Utilisateurs et groupes > Modifier le mot de passe...
+      - Réglages Système > Utilisateurs et groupes > Modifier le mot de passe...
 ### 2. [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
    - Dans l'App Store, créer/se connecter à son identifiant Apple
    - Lancer [le téléchargement Xcode](https://developer.apple.com/xcode/resources/) via App Store (très long)
@@ -15,46 +15,48 @@
    - ```sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer```
    - ```sudo xcodebuild -runFirstLaunch```
    - [Consider install previous Xcode version](https://xcodereleases.com/), but rename it to not replace up-to-date Xcode
-      - To select the default Xcode for flutter : ```sudo xcode-select -s <path/to/>Xcode.app``` 
+      - To select the default Xcode for flutter : ```sudo xcode-select -s <path/to/>Xcode.app```
+   - ```open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app```
+      - (Dans le simulateur) Réglages/Settings > Clavier > Claviers > Français (France) en premier
+      - (Dans le simulateur) Réglages/Settings > Langue et région > Langue Français
+     
 ### 3.1 Settings
-   - Préférences Système > Clavier > Méthodes de saisie > **Français - Numérique**
-   - Préférences Système > TrackPad > Pointer et cliquer > **Toucher pour clicker** activé
-   - Finder > Préférences > **Disques durs** activé
-   - Terminal > Préférences > Profils > Police > Modifier -> 14,  SF Mono Regular 14pt
+   - Réglages Système > Clavier > Méthodes de saisie > **Français - Numérique**
+   - Réglages Système > TrackPad > Pointer et cliquer > **Toucher pour clicker** activé
+   - Ouvrir Finder > Réglages > **Disques durs** activé
+   - Ouvrir Terminal > Réglages > Profils > Police > Modifier -> 14,  SF Mono Regular 14pt
    - ***Right clic*** Dock > Préférences du Dock > **Masquer/afficher automatiquement le Dock** coché
    - If Mac with Apple chipset, create an Intel Terminal
       - Finder > Applications > Utilitaires > ***Clic droit*** Terminal > Duplicate
       - Remane Terminal Intel, ***Clic droit*** Terminal Intel > Lire les informations > Ouvrir avec Rosetta
       - Launch Terminal Intel > ```arch``` => ```i386```
-   - Préférences Système > Clavier > Méthodes de saisie > **Français - Numérique**
-   - Préférences Système > Son > Sortie > Afficher Son dans la barre des menus coché et **toujours**
-   - Préférences Système > Bluetooth > Afficher Bluetooth dans la barre des menus coché
-   - Cmd + Space > Simulateur > Lancer simulateur > Réglages > Clavier > Claviers > Français (France) en premier
-   - Cmd + Space > Simulateur > Lancer simulateur > Réglages > Langue et région > Langue Français
+   - Réglages Système > Son > Sortie > Émettre un son au démarrage **désactivé**
+   - Réglages Système > Son > Sortie > Émettre un son lorsque le volume est modifié **activé**
+   - Centre de contrôle > Son > **Toujours affcher dans la barre de menu**
+   - Centre de contrôle > Bluetooth > **Toujours affcher dans la barre de menu**
+   - Centre de contrôle > Batterie > Afficher le pourcentage **activé**
 
 ### 3.2 Minor settings
-   - QuickTime > Enregistrement de l'écran > Options > Afficher les clics de la souris
-   - Préférences Système > Réseau > Wifi + Câble > Avancé > DNS > Add 1.1.1.1 & 1.0.0.1
+   - QuickTime > Nouvel enregistrement de l'écran > Options > Afficher les clics de la souris
+   - Réglages Système > Réseau > Wifi + Câble > Avancé > DNS > Add 1.1.1.1 & 1.0.0.1
    - Préférences Sytème > Confidentialité et sécurité > Accès complet au disque > Terminal
       - Pour accéder à ls depuis ~/.Trash
 ### 4. Install [Firefox](https://www.mozilla.org/en-US/firefox/new/)
    - Do the sync with your account
+     - Réglages Système > Bureau et Dock > Navigateur par défaut > Firefix
    - Set Firefox default browser
-   - Préférences Système > Confidentialité et sécurité > 
+   - Réglages Système > Confidentialité et sécurité > 
       - Enregistrement de l'écran > clic Cadenas > + > Application > Firefox
-      - Appareil photo > clic Cadenas > + > Application > Firefox
-      - Microphone > clic Cadenas > + > Application > Firefox
-      - Service de localisation > clic Cadenas > + > Application > Firefox
 ### 5. Install [Chrome](https://www.google.com/chrome/)
    - Do the sync with your account
-   - Préférences Système > Confidentialité et sécurité >
+   - Réglages Système > Confidentialité et sécurité >
       - Enregistrement de l'écran > clic Cadenas > + > Application > Chrome
-      - Appareil photo > clic Cadenas > + > Application > Chrome
-      - Microphone > clic Cadenas > + > Application > Chrome
-      - Service de localisation > clic Cadenas > + > Application > Chrome
 ### 6. On Terminal, install [brew](https://brew.sh/)
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/dleurs/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 ### 7. On Terminal, install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) 
 ```
@@ -276,7 +278,7 @@ touch settings.json
 
 ### 20. Download [Developer Tools](https://developer.apple.com/download/all/?q=Additional%20Tools) **Additional Tools for Xcode**, to simulate low connexion 
    - Hardware > double clic **Network Link Conditioner**
-      - Préférences Système > Network Link Conditioner
+      - Réglages Système > Network Link Conditioner
       
 ### 21. Set profile picture
 - Download profile picture in this repo inside dleurs > Images
@@ -340,7 +342,8 @@ alias gof="cd ~/Documents/Flutter"
 alias goa="cd ~/Documents/Android"
 alias goi="cd ~/Documents/iOS"
 alias gor="cd ~/Documents/Readmes"
-alias goai="cd ~/Documents/AI"
+
+alias simulateur="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
 
 alias pip="pip3"
 alias pyton="python3"
