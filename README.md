@@ -210,7 +210,7 @@ flutter doctor -v
 ```
 - Go to where you save your Flutter projects, ```gof```
 ```
-flutter create first_helloworld
+flutter create first_helloworld --org uniqueidhelloworld.leurs.dev
 ```
 ```
 cd first_helloworld
@@ -264,6 +264,8 @@ touch settings.json
     - Inside vscode > ```fn + F5``` > Check it is running > close running task clicking red square inside VSCode
   
   - Create a new Github/Gitlab project **Test Upload Helloworld** to see if you can ```git push```, and commit user info is correct
+
+  - Also run on real device, check https://support.apple.com/fr-fr/HT204460 for iOS
 
 ### 17. Install
    - [VLC](https://www.videolan.org/)
