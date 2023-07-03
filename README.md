@@ -325,7 +325,7 @@ touch settings.json
 
 # Transfer between macs
 
-1. Bien récupérer les **local.properties** et **keystore** de TOUT les projets Android ou Flutter avec android
+1. Bien récupérer les **local.properties** et **keystore** de TOUS les projets Android ou Flutter avec android
 2. Toutes ses collections Insomnia (fichier)
 3. Ses configs Android studio (fichier)
 4. Son .zshrc ou .bashrc (fichier)
