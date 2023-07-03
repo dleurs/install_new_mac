@@ -54,8 +54,11 @@
 ### 6. On Terminal, install [brew](https://brew.sh/)
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
+```
+```
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/dleurs/.zprofile
+```
+```
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 ### 7. On Terminal, install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) 
@@ -86,7 +89,8 @@ mkdir AI;
 brew tap leoafarias/fvm
 brew install fvm
 fvm install stable
-
+```
+```
 export PATH="$PATH:/Users/dleurs/fvm/versions/stable/bin" 
 # Inside zshrc after
 ```
@@ -123,22 +127,20 @@ dart.lineLength > 80
       - **Android SDK Plateform-Tools** coché
    - Press **Apply** 
    - Launch Android Studio > More Actions > Virtual Device Manager > Create Device
-      - Pixel 4 > R ***download*** API 30 
-      - Next > Show Advanced Settings > Internal Storage > **8 GB** > Finish
+      - Pixel 5 > R ***download*** API 30 
+      - Next > Show Advanced Settings > Internal Storage > **6 GB** 
+      - Studio-managed > **6 GB** > Finish
       - Mettre langue et clavier du simulateur à français
 
 ### 13. Setup SSH
 ```
 git config --global user.name "Firstname LASTNAME"
-git config --global user.name
 ```
 ```
 git config --global user.email firstname.lastname@company.com
-git config --global user.email
 ```
 ```
 git config --global init.defaultBranch main
-git config --global init.defaultBranch
 ```
 ```
 ssh-keygen -t ed25519 -C "firstname.lastname@company.com"
@@ -192,6 +194,10 @@ gpg --armor --export 2B6*********9F4 | pbcopy
 Paste to github/gitlab
 - https://github.com/settings/keys
 - https://gitlab.com/-/profile/gpg_keys
+
+Verify email address inside 
+- https://github.com/settings/emails
+- 
    
 ### 15. Setup ```~.zshrc``` like [below](https://github.com/dleurs/install_new_mac/blob/main/README.md#zshrc), copy elements of **ZSHRC** chapter
 
