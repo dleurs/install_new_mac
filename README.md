@@ -267,17 +267,16 @@ touch settings.json
 
 ### 17. Install
    - [VLC](https://www.videolan.org/)
-      - Pour modifier l'appli par défault pour mp3, mp4 et mkv, clic droit fichier > Lire les informations > Ouvrir avec > VLC > **Tout modifier**   
+      - Pour modifier l'appli par défault pour mp3, mp4 et mkv, clic droit fichier > Lire les informations > Ouvrir avec > VLC > **Tout modifier**
+   - [Vysor](https://www.vysor.io/)
    - [Sublime Text](https://www.sublimetext.com/)
    - [Postman](https://www.postman.com/downloads/?utm_source=postman-home) or [Insomnia](https://insomnia.rest/download)
    - [Docker](https://docs.docker.com/desktop/install/mac-install/)
       - Launch and connect 	
-   - [act] ```brew install act``` (require docker)
 ### 18. Optionnal install
    - [Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
    - [Table Plus](https://tableplus.com/)
    - [Sourcetree](https://www.sourcetreeapp.com/)
-   - [Vysor](https://www.vysor.io/)
 
 ### 19. Setup icons Dock
 - ![Macbook Doc](/images/dock.png)
