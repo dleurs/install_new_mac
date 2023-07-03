@@ -380,70 +380,6 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 ```
 ############## FUNCTIONS ##############
 
-# Risky not to check commits and remote to push
-#
-# push() {
-# if [ $# -eq 0 ];
-# then
-#   echo "No arguments supplied. Example : push \"initial commit\" ";
-# else
-#   commitMessage=$1
-#   if [ "$commitMessage" = "" ]; 
-#   then
-#     echo "No commit message";
-#   else
-#     echo "\ngit status;\n";
-#     git status;
-#     echo "\ngit --no-pager diff;\n";
-#     git --no-pager diff;
-#     echo "\ngit add -A;\n";
-#     git add -A;
-#     echo "\ngit commit -m \"${commitMessage}\";\n";
-#     git commit -m $commitMessage;
-#     if [ $# -eq 1 ]; 
-#     then
-#       branch=$(git branch --show-current);
-#     else
-#       branch=$2
-#     fi
-#     for remote in $(git remote)
-#     do
-#       echo "\ngit push $remote $branch;\n";
-#       git push $remote $branch;
-#     done
-#   fi
-# fi
-# }
-
-apush() { # Amend push
-if [ $# -eq 0 ];
-then
-  commitMessage=$(git log -1 --pretty=%s | cat)  
-  echo "No arguments supplied. Using lastest \"${commitMessage}\"";
-else
-  commitMessage=$1
-fi
-if [ "$commitMessage" = "" ]; 
-then
-  echo "No commit message";
-else
-  echo "\ngit status;\n";
-  git status;
-  echo "\ngit --no-pager diff;\n";
-  git --no-pager diff;
-  echo "\ngit add -A;\n";
-  git add -A;
-  echo "\ngit commit --amend -m \"${commitMessage}\";\n";
-  git commit --amend -m $commitMessage;
-  branch=$(git branch --show-current);
-  for remote in $(git remote)
-  do
-    echo "\ngit push $remote $branch --force;\n";
-    git push $remote $branch --force;
-  done
-fi
-}
-
 pull() {
   branch=$1
   initialBranch=$(git branch --show-current)
@@ -472,20 +408,6 @@ changeAuthor() {
 rmDS_Store() {
   find . -name '.DS_Store' -type f -delete;
 }
-
-setnamespace() {
-  kubectl config set-context --current --namespace=$1
-}
-
-llama () {
-	if [ $# -eq 0 ]
-	then
-		~/Documents/AI/llama.cpp/main -m ~/Documents/AI/models/LLaMa/13B/ggml-model-q4_0.bin --interactive-first -n 512
-	else
-		~/Documents/AI/llama.cpp/main -m ~/Documents/AI/models/LLaMa/13B/ggml-model-q4_0.bin -n 512 -p $1
-	fi
-}
-
 
 ############ END FUNCTIONS ############
 ```
