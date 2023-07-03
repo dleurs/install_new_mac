@@ -3,7 +3,7 @@
 ### 1. Initial setup
    - Internet connexion established
    - FileVault is set up
-      - Préférences Système > Sécurité et confidentialité > FileVault
+      - Réglages Système > Confidentialité et sécurité > FileVault
    - [Latest stable macOs version](https://en.wikipedia.org/wiki/MacOS_version_history#Releases) installed
       - Préférences Système > Mise à jour de logiciels
    - Password setup
@@ -40,14 +40,14 @@
 ### 4. Install [Firefox](https://www.mozilla.org/en-US/firefox/new/)
    - Do the sync with your account
    - Set Firefox default browser
-   - Préférences Système > Sécurité et confidentialité > 
+   - Préférences Système > Confidentialité et sécurité > 
       - Enregistrement de l'écran > clic Cadenas > + > Application > Firefox
       - Appareil photo > clic Cadenas > + > Application > Firefox
       - Microphone > clic Cadenas > + > Application > Firefox
       - Service de localisation > clic Cadenas > + > Application > Firefox
 ### 5. Install [Chrome](https://www.google.com/chrome/)
    - Do the sync with your account
-   - Préférences Système > Sécurité et confidentialité >
+   - Préférences Système > Confidentialité et sécurité >
       - Enregistrement de l'écran > clic Cadenas > + > Application > Chrome
       - Appareil photo > clic Cadenas > + > Application > Chrome
       - Microphone > clic Cadenas > + > Application > Chrome
