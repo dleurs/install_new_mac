@@ -307,18 +307,9 @@ touch settings.json
 - ```mitmweb```
 - Press z to clean history
 
-### 23. AI 
-
-(Tests were bad so you can avoid it)
-
-- Intall [.dmg file](https://github.com/vincelwt/chatgpt-mac) ChatGPT
-- Install [llama.cpp](https://github.com/ggerganov/llama.cpp)
-   - [The install doc](https://til.simonwillison.net/llms/llama-7b-m2)
-- Get the weights from [here](https://github.com/facebookresearch/llama/pull/73/commits/56de950af8a48c7cae221581e2e3e2c342b2ad82) 219Go required or select only 7B model / 12.55Gb folder with qBitTorrent
-![image](https://user-images.githubusercontent.com/58068925/227500173-2621ef99-03e7-41e7-8e98-67167ab76beb.png)
-
-### 24. Other
+### 23. Other
 - Download a PDF, open it with default Preview, then Presentation > tick 'Vignettes' so it will always open with vignettes
+- Cmd + Space > Preview > Ajouter sa signature
 
 
 
