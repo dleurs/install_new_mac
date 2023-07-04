@@ -299,18 +299,32 @@ touch settings.json
 - ```brew install mitmproxy```
 - S'assurer de n'avoir qu'une connexion wifi ou filaire (pas deux à la fois)
 - Réglages Systèmes > Wifi ou filaire > Détails > Proxys > 
-   - Proxy web : Serveur localhost / Port 8080
-   - Proxy web sécurisé : Serveur localhost / Port 8080
+   - Proxy web (HTTP) **activé** : Serveur localhost / Port 8080
+   - Proxy web sécurisé (HTTPS) **activé** : Serveur localhost / Port 8080
 - ```cd; cd Documents; mkdir Proxy```
-- Via Chrome : mitm.it
-- Téléchargez proxy macOS et iOS, déplacer vers ~/Documents/Proxy, renommez préfixe macOs et iOS
-- Double clic certificat macOs, puis KeyChain > "mitm" > Toujours faire confiance
-- On Firefox > Réglages > Vie privée et sécurité > Afficher les certificats > Autorité > Importer > certificat iOS
-- On Chrome > proxy > utiliser proxy système
+- Via navigateur web : mitm.it
+- Téléchargez proxy macOS et iOS, déplacer vers ~/Documents/Proxy, renommez préfixe macos- et ios-
+- Double clic certificat macOs, 
+    - Si cela ne fonctionne pas, ```sudo security add-trusted-cert -d -p ssl -p basic -k /Library/Keychains/System.keychain macos-mitmproxy-ca-cert.pem```
+- KeyChain > "mitm" > Toujours faire confiance 
+- On Firefox > Réglages > Vie privée et sécurité > Afficher les certificats > Autorité > Importer > certificat macOS
 - Ouvrir simulateur iOS > drag drop certificat iOS dans simulateur > Réglages > Général > Informations > Réglages des certificats > mitmproxy checked
 
 - ```mitmweb```
 - Press z to clean history
+
+### 22.bis Activer mitm
+
+- Réglages Systèmes > Wifi ou filaire > Détails > Proxys > 
+   - Proxy web (HTTP) **activé** : Serveur localhost / Port 8080
+   - Proxy web sécurisé (HTTPS) **activé** : Serveur localhost / Port 8080
+     
+
+### 22.ter Désactiver mitm
+
+- Réglages Systèmes > Wifi ou filaire > Détails > Proxys > 
+   - Proxy web (HTTP) **désactivé** 
+   - Proxy web sécurisé (HTTPS) **désactivé**
 
 ### 23. Other
 - Download a PDF, open it with default Preview, then Presentation > tick 'Vignettes' so it will always open with vignettes
