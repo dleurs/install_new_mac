@@ -309,6 +309,7 @@ touch settings.json
 - KeyChain > "mitm" > Toujours faire confiance 
 - On Firefox > Réglages > Vie privée et sécurité > Afficher les certificats > Autorité > Importer > certificat macOS
 - Ouvrir simulateur iOS > drag drop certificat iOS dans simulateur > Réglages > Général > Informations > Réglages des certificats > mitmproxy checked
+- For Android emulator, check https://docs.mitmproxy.org/stable/howto-install-system-trusted-ca-android/
 
 - ```mitmweb```
 - Press z to clean history
