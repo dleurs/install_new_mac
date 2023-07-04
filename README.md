@@ -104,7 +104,12 @@ brew install trash
 Les dossiers ne seront pas visibles dans la poubelle mac, il faudra ```cd ~/.Trash; ls; mv```
 ```
 brew install python
-brew install java
+```
+```
+brew install java #or java11
+```
+```
+export JAVA_HOME="/opt/homebrew/opt/openjdk@20" # Next inside .zshrc
 ```
 ### 11. Install [VSCode](https://code.visualstudio.com/download)
    - Code > Preferences > Turn on Settings Sync... > GitHub
@@ -412,6 +417,8 @@ rmDS_Store() {
 export PATH="$PATH:/Users/dleurs/fvm/versions/stable/bin"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH="$PATH:/Applications/Sublime Text.app/Contents/SharedSupport/bin"
+
+export JAVA_HOME="/opt/homebrew/opt/openjdk@20"
 
 ########### END PATH EXPORTS ##########
 ```
