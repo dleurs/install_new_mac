@@ -301,6 +301,10 @@ touch settings.json
 ### 23. Other
 - Download a PDF, open it with default Preview, then Presentation > tick 'Vignettes' so it will always open with vignettes
 - Cmd + Space > Preview > Ajouter sa signature
+- Add SSH key to console.hetzner.cloud
+```
+cat ~/.ssh/id_ed25519.pub | pbcopy
+```
 
 
 
@@ -344,6 +348,8 @@ subl ~/.gitconfig
 ### ZSHRC aliases
 ```
 ############### ALIASES ###############
+
+alias sshcloud="ssh root@XXX"
 
 alias gof="cd ~/Documents/Flutter"
 alias goa="cd ~/Documents/Android"
