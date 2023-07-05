@@ -321,6 +321,9 @@ touch settings.json
 10. Récupérer ```~/Library/MobileDevice/Provisioning\ Profiles```
 
 # ~/.gitconfig
+```
+subl ~/.gitconfig
+```
 
 ```
 [alias]
