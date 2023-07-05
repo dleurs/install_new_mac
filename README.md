@@ -343,6 +343,15 @@ alias d="docker"
 
 alias rm="echo 'FAILURE : better user trash, or /bin/rm'"
 
+[alias]
+  # Amend into a past commit using fzf
+  # Stage your changes `git add -p`, then run `git autofixup` and choose the target commit
+  autofixup = "!f() { \
+    COMMIT_HASH=$(git log --pretty=oneline | fzf | awk '{print $1}'); \
+    git commit --fixup $COMMIT_HASH; \
+    GIT_SEQUENCE_EDITOR=: git rebase --autostash --autosquash -i $COMMIT_HASH^; \
+    }; f"
+
 ############# END ALIASES ############# 
 
 ```
