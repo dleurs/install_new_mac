@@ -320,7 +320,10 @@ touch settings.json
 9. Déplacer ou créer le fichier ```~/.gradle/gradle.properties``` avec ```jfrogUser="" jfrogApiKey=""```
 10. Récupérer ```~/Library/MobileDevice/Provisioning\ Profiles```
 
-# ~/.gitconfig
+# Git autofixup
+```
+brew install fzf
+```
 ```
 subl ~/.gitconfig
 ```
