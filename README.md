@@ -367,6 +367,7 @@ alias d="docker"
 
 alias gitskip="git update-index --skip-worktree"
 alias gitunskip="git update-index --no-skip-worktree"
+# git autofixup   inside ~/.gitconfig
 
 alias rm="echo 'FAILURE : better user trash, or /bin/rm'"
 
