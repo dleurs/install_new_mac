@@ -305,11 +305,6 @@ touch settings.json
 ```
 cat ~/.ssh/id_ed25519.pub | pbcopy
 ```
-- Install HP Scan on App Store
-
-
-
-
 
 
 # À penser avant de donner son mac
