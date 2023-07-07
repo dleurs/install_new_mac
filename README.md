@@ -311,18 +311,17 @@ cat ~/.ssh/id_ed25519.pub | pbcopy
 
 
 
-# Transfer between macs
+# À penser avant de donner son mac
 
 1. Bien récupérer les **local.properties** et **keystore** de TOUS les projets Android ou Flutter avec android
-2. Toutes ses collections Insomnia (fichier)
-3. Ses configs Android studio (fichier)
-4. Son .zshrc ou .bashrc (fichier)
-5. Ses configs VSCode (sync avec github)
-6. Supprimer dossier .ssh (backup ?) 
-7. L'export des certificats du Keychain Access
-8. Déplacer son dossier ~/.kube ou Setup kube
-9. Déplacer ou créer le fichier ```~/.gradle/gradle.properties``` avec ```jfrogUser="" jfrogApiKey=""```
-10. Récupérer ```~/Library/MobileDevice/Provisioning\ Profiles```
+2. Toutes ses collections Insomnia / Postman (fichier)
+3. ? Ses configs Android studio (fichier) 
+4. Check sync VSCode Github OK
+5. L'export des certificats du Keychain Access
+6. Déplacer les fichiers .gitignored, comme ```~/.gradle/gradle.properties``` avec ```jfrogUser="" jfrogApiKey=""```
+7. Avec la suppression clé ssh et gpg, retirer de github
+8. Récupérer ```~/Library/MobileDevice/Provisioning\ Profiles```
+9. Certains bouts de code à conserver ?
 
 # Git autofixup
 ```
