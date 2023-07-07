@@ -365,6 +365,9 @@ alias sublgit="subl ~/.gitconfig"
 alias k="kubectl"
 alias d="docker"
 
+alias gitskip="git update-index --skip-worktree"
+alias gitunskip="git update-index --no-skip-worktree"
+
 alias rm="echo 'FAILURE : better user trash, or /bin/rm'"
 
 ############# END ALIASES ############# 
