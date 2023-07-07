@@ -362,6 +362,7 @@ alias pip="pip3"
 alias pyton="python3"
 
 alias sublzsh="subl ~/.zshrc"
+alias sublgit="subl ~/.gitconfig"
 alias k="kubectl"
 alias d="docker"
 
