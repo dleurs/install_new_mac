@@ -17,6 +17,7 @@
    - [Consider install previous Xcode version](https://xcodereleases.com/), but rename it to not replace up-to-date Xcode
       - To select the default Xcode for flutter : ```sudo xcode-select -s <path/to/>Xcode.app```
    - ```open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app```
+      - Simulator > Settings... > **coché** Show single touches et **coché** Show pinch gestures
       - (Dans le simulateur) Réglages/Settings > Clavier > Claviers > Français (France) en premier
       - (Dans le simulateur) Réglages/Settings > Langue et région > Langue Français
      
