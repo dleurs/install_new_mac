@@ -428,6 +428,7 @@ rmDS_Store() {
 export PATH="$PATH:/Users/dleurs/fvm/versions/stable/bin"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH="$PATH:/Applications/Sublime Text.app/Contents/SharedSupport/bin"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 export JAVA_HOME="/opt/homebrew/opt/openjdk@20"
 
