@@ -279,13 +279,20 @@ touch settings.json
    - [Vysor](https://www.vysor.io/)
    - [Sublime Text](https://www.sublimetext.com/)
    - [Postman](https://www.postman.com/downloads/?utm_source=postman-home) or [Insomnia](https://insomnia.rest/download)
-   - [Docker](https://docs.docker.com/desktop/install/mac-install/)
-      - Launch and connect 	
-### 18. Optionnal install
-   - [Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
-   - [Table Plus](https://tableplus.com/)
-   - [Sourcetree](https://www.sourcetreeapp.com/)
    - Giphy, inside App Store
+      - Réglages Systèmes > Confidentialité et sécurité > Enregistrement de l'écran > + Giphy
+   - [Table Plus](https://tableplus.com/)
+     
+### 18. Optionnal install
+   - [Zoom](https://support.zoom.us/hc/fr/articles/4415294177549-T%C3%A9l%C3%A9charger-le-Zoom-desktop-client-et-la-Zoom-mobile-app)
+      - Réglages Systèmes > Confidentialité et sécurité > Enregistrement de l'écran > + Zoom
+   - [Microsoft Teams](https://www.microsoft.com/fr-fr/microsoft-teams/download-app)
+      - Réglages Systèmes > Confidentialité et sécurité > Enregistrement de l'écran > + Microsoft Teams
+   - [Sourcetree](https://www.sourcetreeapp.com/)
+   - [Docker](https://docs.docker.com/desktop/install/mac-install/)
+      - Launch and connect
+   - [Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
+
 
 ### 19. Setup icons Dock
 - ![Macbook Doc](/images/dock.png)
