@@ -156,7 +156,7 @@ ssh-keygen -t ed25519 -C "firstname.lastname@company.com"
 ```
 cat ~/.ssh/id_ed25519.pub | pbcopy
 ```
-- Paste the content inside Github/Gitlab > Security > Add an SSH Key, with tile **Macbook Pro 14" M1 2021 SERIAL_NUMBER_COMPUTER** 
+- Paste the content inside Github/Gitlab/Hetzner > Security > Add an SSH Key, with tile **Macbook Pro 14" M1 2021 SERIAL_NUMBER_COMPUTER** 
  - Add your key to agent without need to enter passphrase every time:
 ```
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
