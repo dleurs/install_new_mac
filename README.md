@@ -139,6 +139,11 @@ dart.lineLength > 80
       - Studio-managed > **6 GB** > Finish
       - Mettre langue et clavier du simulateur à français
 
+# For adb
+```
+brew install android-platform-tools
+```
+
 ### 13. Setup SSH
 ```
 git config --global user.name "Firstname LASTNAME"
