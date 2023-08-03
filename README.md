@@ -288,6 +288,7 @@ touch settings.json
    - Giphy, inside App Store
       - Réglages Systèmes > Confidentialité et sécurité > Enregistrement de l'écran > + Giphy
    - [Table Plus](https://tableplus.com/)
+   - [Flashlight](https://docs.flashlight.dev/) ```curl https://get.flashlight.dev | bash```
      
 ### 18. Optionnal install
    - [Zoom](https://support.zoom.us/hc/fr/articles/4415294177549-T%C3%A9l%C3%A9charger-le-Zoom-desktop-client-et-la-Zoom-mobile-app)
