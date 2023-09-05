@@ -299,6 +299,7 @@ touch settings.json
    - [Docker](https://docs.docker.com/desktop/install/mac-install/)
       - Launch and connect
    - [Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
+   - [Android File Transfer](https://www.android.com/filetransfer/)
 
 
 ### 19. Setup icons Dock
