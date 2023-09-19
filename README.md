@@ -423,13 +423,29 @@ pull() {
   fi
 }
 
+cleanIos() {
+  cd ios
+  trash Pods
+  trash .symlinks
+  trash Flutter/Flutter.framework
+  trash Flutter/Flutter.podspec
+  trash Podfile.lock
+  arch -x86_64 pod repo update
+  arch -x86_64 pod install
+  cd ..
+}
 
 changeAuthor() {
   git config --global user.email firstname.lastname@company.com
   git commit --amend --reset-author --no-edit
 }
 
-rmDS_Store() {
+generate() {
+  fvm dart run build_runner build --delete-conflicting-outputs
+  fvm flutter gen-l10n
+}
+
+deleteDsStore() {
   find . -name '.DS_Store' -type f -delete;
 }
 
