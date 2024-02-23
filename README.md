@@ -9,7 +9,7 @@
    - Password setup
       - Réglages Système > Utilisateurs et groupes > Modifier le mot de passe...
 ### 2. [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
-   - Create [Apple ID](https://appleid.apple.com/). Be careful if you should use ESN email or client company email.
+   - Create [Apple ID](https://appleid.apple.com/). **Be careful if you should use ESN email or client company email.**
    - Dans l'App Store, créer/se connecter à son identifiant Apple
    - Lancer [le téléchargement Xcode](https://developer.apple.com/xcode/resources/) via App Store (très long)
       - Lancer Xcode pour lancer l'install
