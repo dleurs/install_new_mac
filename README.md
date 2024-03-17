@@ -49,6 +49,7 @@
    - Set Firefox default browser
    - Réglages Système > Confidentialité et sécurité > 
       - Enregistrement de l'écran > clic Cadenas > + > Application > Firefox
+   - Installer extension uBlock Origin (devrais être automatique)
 ### 5. Install [Chrome](https://www.google.com/chrome/)
    - Do the sync with your account
    - Réglages Système > Confidentialité et sécurité >
