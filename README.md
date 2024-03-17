@@ -40,7 +40,7 @@
 
 ### 3.2 Minor settings
    - QuickTime > Nouvel enregistrement de l'écran > Options > Afficher les clics de la souris
-   - Réglages Système > Réseau > Wifi + Câble > Avancé > DNS > Add 1.1.1.1 & 1.0.0.1
+   - Réglages Système > Réseau > Wifi + Câble > Avancé > DNS > Add DNS https://yggland.fr/FAQ-Tutos/ (could be 1.1.1.1 & 1.0.0.1)
    - Préférences Sytème > Confidentialité et sécurité > Accès complet au disque > Terminal
       - Pour accéder à ls depuis ~/.Trash
 ### 4. Install [Firefox](https://www.mozilla.org/en-US/firefox/new/)
