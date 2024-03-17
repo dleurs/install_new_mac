@@ -304,7 +304,7 @@ touch settings.json
    - [Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
    - [Android File Transfer](https://www.android.com/filetransfer/)
    - [qBitTorrent](https://www.qbittorrent.org/) 
-      - Changer download folder default : /Users/dleurs/Movies/personnel_privee
+      - Changer Settings > Download folder default : /Users/dleurs/Movies/videos_personnel_privee
 
 ### 19. Setup icons Dock
 - ![Macbook Doc](/images/dock.png)
