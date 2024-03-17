@@ -305,6 +305,9 @@ touch settings.json
    - [Android File Transfer](https://www.android.com/filetransfer/)
    - [qBitTorrent](https://www.qbittorrent.org/) 
       - Changer Settings > Download folder default : /Users/dleurs/Movies/videos_personnel_privee
+      - Extraire piste sous titre : https://subler.org/
+        - Instruction extraction srt : https://www.journaldulapin.com/2023/05/25/recuperer-les-sous-titres-dans-un-fichier-mkv/
+        -  
 
 ### 19. Setup icons Dock
 - ![Macbook Doc](/images/dock.png)
