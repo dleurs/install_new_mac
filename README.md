@@ -303,9 +303,8 @@ touch settings.json
       - Launch and connect
    - [Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
    - [Android File Transfer](https://www.android.com/filetransfer/)
-   - [qBitTorrent](https://www.qbittorrent.org/)
-      - Tuto transmission https://yggland.fr/FAQ-Tutos/#accordion-tab4-content1
-
+   - [qBitTorrent](https://www.qbittorrent.org/) 
+      - Réglage https://yggland.fr/FAQ-Tutos/#accordion-tab2-content2
 
 ### 19. Setup icons Dock
 - ![Macbook Doc](/images/dock.png)
