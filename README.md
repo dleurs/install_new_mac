@@ -290,6 +290,7 @@ touch settings.json
       - Réglages Systèmes > Confidentialité et sécurité > Enregistrement de l'écran > + Giphy
    - [Table Plus](https://tableplus.com/)
    - [Flashlight](https://docs.flashlight.dev/) ```curl https://get.flashlight.dev | bash```
+   - [Logitech G Hub](https://www.logitechg.com/fr-fr/innovation/g-hub.html)
      
 ### 18. Optionnal install
    - [Very Good Cli](https://pub.dev/packages/very_good_cli)
