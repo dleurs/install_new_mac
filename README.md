@@ -129,7 +129,7 @@ dart.lineLength > 80
 ```
 ### 12. Install [Android Studio](https://developer.android.com/studio)
    - Launch Android Studio, install it with default settings
-   - Android Studio > Preferences > Apparence & Behavior > System Settings > Android SDK > **SDK Tools**
+   - Android Studio > Preferences > Language & Framework > Android SDK > **SDK Tools**
       - **Android SDK Build-Tools** coché
       - **Android SDK Command-line Tools** coché
       - **Android SDK Plateform-Tools** coché
