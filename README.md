@@ -306,6 +306,7 @@ touch settings.json
       - Launch and connect
    - [Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
    - [Android File Transfer](https://www.android.com/filetransfer/)
+   - [LibreOffice](https://fr.libreoffice.org/download/telecharger-libreoffice/?type=mac-aarch64&version=24.8.2&lang=fr)
    - [qBitTorrent](https://www.qbittorrent.org/) 
       - Changer Settings > Download folder default : /Users/dleurs/Movies/videos_personnel_privee
       - Extraire piste sous titre : https://subler.org/
