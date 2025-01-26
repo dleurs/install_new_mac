@@ -434,6 +434,26 @@ pull() {
   fi
 }
 
+push() {
+  # Récupérer la branche Git actuelle
+  current_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+  
+  # Vérifier si on est bien dans un dépôt Git
+  if [ -z "$current_branch" ]; then
+    echo "Erreur : Ce répertoire n'est pas un dépôt Git."
+    return 1
+  fi
+
+  # Si un argument est donné avec "--force-with-lease", ajouter cette option
+  if [[ "$1" == "--force-with-lease" ]]; then
+    echo "Poussée avec 'force-with-lease' pour la branche : $current_branch"
+    git push origin "$current_branch" --force-with-lease
+  else
+    echo "Poussée pour la branche : $current_branch"
+    git push origin "$current_branch"
+  fi
+}
+
 cleanIos() {
   cd ios
   trash Pods
