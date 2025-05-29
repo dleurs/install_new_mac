@@ -480,6 +480,21 @@ deleteDsStore() {
   find . -name '.DS_Store' -type f -delete;
 }
 
+compressVideo() {
+  if [[ -z "$1" ]]; then
+    echo "Usage: convert_to_h264 <input.mov>"
+    return 1
+  fi
+
+  input="$1"
+  filename="${input%.*}"
+  output="${filename}.mp4"
+
+  echo "Converting '$input' to H.264 as '$output'..."
+  ffmpeg -i "$input" -vcodec libx264 -acodec aac "$output"
+  echo "✅ Conversion finished: $output"
+}
+
 ############ END FUNCTIONS ############
 ```
 
